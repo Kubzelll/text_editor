@@ -31,7 +31,7 @@ long __stdcall WindowProcess(
 	}return 0;
 
 	case WM_SYSCOMMAND: {
-		if ((wideParameter & 0xfff0) == SC_KEYMENU) // Disable ALT application menu
+		if ((wideParameter & 0xfff0) == SC_KEYMENU) 
 			return 0;
 	}break;
 
@@ -40,7 +40,7 @@ long __stdcall WindowProcess(
 	}return 0;
 
 	case WM_LBUTTONDOWN: {
-		gui::position = MAKEPOINTS(longParameter); // set click points
+		gui::position = MAKEPOINTS(longParameter);
 	}return 0;
 
 	case WM_MOUSEMOVE: {
